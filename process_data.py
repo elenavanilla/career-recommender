@@ -16,8 +16,6 @@ from sklearn.model_selection import cross_val_score, train_test_split, GridSearc
 from sklearn.metrics import accuracy_score
 
 
-#import pickle
-
 #Stop words present in the library
 new_stopwords = ["index","ability", "good", "years", "knowledge", "work","job", "strong","description","requirements","experience","work"]
 stopwords = nltk.corpus.stopwords.words('english')
@@ -231,13 +229,6 @@ def get_topic_classification_models():
     model_1 = predictive_modeling(jobs_df)
     return model, model_1, vec
 
-# topic_model, classifier, vec= get_topic_classification_models()
-# topic_model_name = 'topic_model.sav'
-# classifier_name = 'classification_model.sav'
-# vec_name = 'job_vec.sav'
-# pickle.dump(topic_model, open(topic_model_name, 'wb'))
-# pickle.dump(classifier, open(classifier_name, 'wb'))
-# pickle.dump(vec, open(vec_name, 'wb'))
 
 def main(resume, topic_model, predictor, vec):
     '''
