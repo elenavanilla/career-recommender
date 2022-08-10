@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pca_chart as pc
+#import pca_chart as pc
 import matplotlib.pyplot as plt
 import word_similarity
 import re
