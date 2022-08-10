@@ -1,0 +1,28 @@
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from nltk.tokenize import TreebankWordTokenizer
+from nltk.stem import PorterStemmer
+from sklearn.decomposition import TruncatedSVD, NMF
+from sklearn.metrics.pairwise import cosine_similarity
+from nltk.stem.porter import PorterStemmer
+import re
+import string
+import nltk
+import numpy as np
+import plotly.graph_objects as go
+import plotly.express as px
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_score, train_test_split, GridSearchCV
+from sklearn.metrics import accuracy_score
+
+import streamlit as st
+import pca_chart as pc
+import matplotlib.pyplot as plt
+import word_similarity
+import re
+import process_data as pcd
+import plotly.graph_objects as go
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
