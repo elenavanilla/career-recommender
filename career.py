@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 #import pca_chart as pc
 import matplotlib.pyplot as plt
-import word_similarity
+#import word_similarity
 import re
 import plotly.express as px
 import process_data as pcd
