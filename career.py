@@ -1,14 +1,13 @@
 import streamlit as st
 import pandas as pd
 import nltk
-#import pca_chart as pc
 import matplotlib.pyplot as plt
-#import word_similarity
 import re
 import plotly.express as px
 import process_data as pcd
 import plotly.graph_objects as go
 from wordcloud import WordCloud
+from process_data import load_data, topindustry, get_recommendation, process_data, sortbyindustry, industrykeywords
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
