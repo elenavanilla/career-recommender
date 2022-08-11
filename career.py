@@ -11,7 +11,7 @@ from process_data import load_data, topindustry, get_recommendation, process_dat
 import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
+nltk.download('punkt')
 
 st.title('Job Recommender System')
 st.header("Overview of dataset")
