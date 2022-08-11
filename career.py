@@ -4,7 +4,7 @@ import nltk
 import matplotlib.pyplot as plt
 import re
 import plotly.express as px
-import process_data as pcd
+#import process_data as pcd
 import plotly.graph_objects as go
 from wordcloud import WordCloud
 from process_data import load_data, topindustry, get_recommendation, process_data, sortbyindustry, industrykeywords
